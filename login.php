@@ -15,7 +15,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         session_start();
         $_SESSION['loggedin'] = true;
         $_SESSION['username'] = $username;
-        header("location: welcome.php");
+        header("location: pendingorder.php");
 
     } 
     else{
@@ -60,7 +60,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     <div class="container my-4">
      <h1 class="text-center">Login to our website</h1>
-     <form action="/loginsystem/login.php" method="post">
+     <form action="/ordersystem/login.php" method="post">
         <div class="form-group">
             <label for="username">Username</label>
             <input type="text" class="form-control" id="username" name="username" aria-describedby="emailHelp">
